@@ -6,17 +6,18 @@ It's oh so still
 Shh shh
 You're all alone
 Shh shh
-And so peaceful until
-You fall in love
-Zing boom
-The sky up above
-Zing boom
-Is caving in
-Wow bam
-You've never been so nuts about a guy
-You want to laugh you want to cry
-You cross your heart and hope to die
-'Til it's over and then
+
+
+Why men great 'til they gotta be great?
+Don't text me, tell it straight to my face
+Best friend sat me down in the salon chair
+Shampoo press, get you out of my hair
+Fresh photos with the bomb lighting
+New man on the Minnesota Vikings
+Truth hurts, needed something more exciting
+Bom bom bi dom bi dum bum bay
+
+
 Shh shh
 It's nice and quiet
 Shh shh
