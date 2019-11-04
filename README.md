@@ -41,4 +41,13 @@ And so peaceful until
 
 I just took a DNA test, turns out I'm 100% THAT BITCH
 
+Money's tight, yes it's true
+I've got none, but I'll show you
+Just how rich, a poor boy can be
+So here I am, fingers crossed
+Try me out, free of cost
+It's my zero interest guarantee
+Meet me by the smokestack in Governor Square
+And I'll show you what it is I do
+
 
