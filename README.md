@@ -47,4 +47,8 @@ It's my zero interest guarantee
 Meet me by the smokestack in Governor Square
 And I'll show you what it is I do
 
-
+She brought the sugar and the mint
+She brought the sugar and the mint
+And he brought the whiskey
+Asked for my blessing
+"Yes, sir, I know she's—"
