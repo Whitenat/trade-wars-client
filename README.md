@@ -38,9 +38,6 @@ It's oh so still
 You're all alone
 And so peaceful until
 
-
-I just took a DNA test, turns out I'm 100% THAT BITCH
-
 Money's tight, yes it's true
 I've got none, but I'll show you
 Just how rich, a poor boy can be
