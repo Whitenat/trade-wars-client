@@ -1,7 +1,7 @@
 .title {
 	color: Lime;
 	text-align: center;
-	font-size: 500%;
+	font-size: 900%;
 	margin-top: 75 px;
 }
 
@@ -15,7 +15,43 @@ body {
 	font-size: 200%;
 	text-align: center;
 	color: Gold;
-	margin-top: 15%;
+	margin-top: 12%;
+}
+
+.userIn {
+	width:30%;
+	font-family: roboto-mono, monospace;
+	font-weight: 500;
+	font-size: 100%;
+	text-align: center;
+	color: dimgrey;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+.button {
+	width: 16%;
+	padding: 1%;
+	font-family: roboto-mono, monospace;
+	font-weight: 400;
+	font-size: 150%;
+	text-align: center;
+	color: black;
+	background-color: Turquoise;
+	margin-top: 2%;
+	margin-left: 42%;
+	margin-right: 42%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: MediumTurquoise}
+
+.button:active {
+  background-color: MediumTurquoise;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .robotoLightItalic{
