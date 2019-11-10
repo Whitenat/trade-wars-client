@@ -7,6 +7,18 @@ Shh shh
 
 You're all alone
 Shh shh
+
+
+Why men great 'til they gotta be great?
+Don't text me, tell it straight to my face
+Best friend sat me down in the salon chair
+Shampoo press, get you out of my hair
+Fresh photos with the bomb lighting
+New man on the Minnesota Vikings
+Truth hurts, needed something more exciting
+Bom bom bi dom bi dum bum bay
+
+
 And so peaceful until
 You fall in love
 Zing boom
