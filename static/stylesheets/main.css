@@ -5,6 +5,13 @@
 	margin-top: 75 px;
 }
 
+.subtitle {
+	color: Lime;
+	text-align: left;
+	font-size: 300%;
+	margin-top: 75 px;
+}
+
 body {
 	background-color: black;
 }
@@ -98,3 +105,18 @@ body {
 	font-weight: 700;
 }
 
+.grid-container {
+	display: grid;
+	width: 90%;
+	height: 90%;
+	grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px ;
+	grid-gap: 0px;
+	background-color: black;
+	padding: 2px;
+  }
+  
+  .grid-container > div {
+	background-color: black;
+	border: 2px solid turquoise;
+	height: 40px;
+  }
