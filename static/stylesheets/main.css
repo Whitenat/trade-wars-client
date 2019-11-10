@@ -3,6 +3,7 @@
 	text-align: center;
 	font-size: 900%;
 	margin-top: 75 px;
+	font-family: Neon;
 }
 
 body {
@@ -52,6 +53,13 @@ body {
   background-color: MediumTurquoise;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+@font-face {
+    font-family: 'Neon';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neon'), url('Neon.woff') format('woff');
 }
 
 .robotoLightItalic{
