@@ -105,18 +105,61 @@ body {
 	font-weight: 700;
 }
 
-.grid-container {
-	display: grid;
-	width: 90%;
-	height: 90%;
-	grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px ;
-	grid-gap: 0px;
-	background-color: black;
-	padding: 2px;
+body {
+	width: 100%;
+	color: #fff;
+	font-family: monospace;
+	margin-left: 10%;
   }
   
-  .grid-container > div {
-	background-color: black;
-	border: 2px solid turquoise;
-	height: 40px;
+  .grid {
+	width: 55%;
+	background: #3dd3ed;
+	display: grid;
+	grid-auto-rows: 20vw;
+	grid-gap: .25rem;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	
   }
+  
+  @media (min-width: 30rem) {
+	.grid {
+	grid-auto-rows: 5vw;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+	}
+  }
+  
+  .grid__item {
+	animation: 1s linear 0s alternate infinite flicker;
+	background: black;
+	box-shadow: inset 0 0 2rem #3dd3ed;
+	padding: 2rem;
+  }
+  
+  
+  @media (min-width: 60rem) {
+  
+  @keyframes flicker { from { 
+	box-shadow: inset 0 0 1.5rem #3dd3ed; } to { 
+	box-shadow: inset 0 0 1rem #3dd3ed; }  }
+  }
+
+  .cargo-container {
+	  float: right;
+	  text-align: left;
+	  width:30%;
+	  height: 40px;
+  }
+
+  .cargo-list {
+	font-family: roboto-mono, monospace;
+	font-weight: 300;
+	font-size: 200%;
+	text-align: left;
+	color: Gold;
+}
+
+  .center-nav{
+	width: 100%;
+
+}
