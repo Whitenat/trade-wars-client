@@ -1,0 +1,100 @@
+.title {
+	color: Lime;
+	text-align: center;
+	font-size: 900%;
+	margin-top: 75 px;
+}
+
+body {
+	background-color: black;
+}
+
+.enterUser {
+	font-family: roboto-mono, monospace;
+	font-weight: 300;
+	font-size: 200%;
+	text-align: center;
+	color: Gold;
+	margin-top: 12%;
+}
+
+.userIn {
+	width:30%;
+	font-family: roboto-mono, monospace;
+	font-weight: 500;
+	font-size: 100%;
+	text-align: center;
+	color: dimgrey;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+.button {
+	width: 16%;
+	padding: 1%;
+	font-family: roboto-mono, monospace;
+	font-weight: 400;
+	font-size: 150%;
+	text-align: center;
+	color: black;
+	background-color: Turquoise;
+	margin-top: 2%;
+	margin-left: 42%;
+	margin-right: 42%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: MediumTurquoise}
+
+.button:active {
+  background-color: MediumTurquoise;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.robotoLightItalic{
+	font-family: roboto-mono, monospace;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.robotoLight{
+	font-family: roboto-mono, monospace;
+	font-weight: 300;
+}
+
+.robotoRegItalic{
+	font-family: roboto-mono, monospace;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.robotoReg{
+	font-family: roboto-mono, monospace;
+	font-weight: 400;
+}
+
+.robotoMedItalic{
+	font-family: roboto-mono, monospace;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.robotoMed{
+	font-family: roboto-mono, monospace;
+	font-weight: 500;
+}
+
+.robotoBoldItalic{
+	font-family: roboto-mono, monospace;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.robotoBight{
+	font-family: roboto-mono, monospace;
+	font-weight: 700;
+}
+
