@@ -1,4 +1,15 @@
+@-webkit-keyframes flick
+{
+0% {opacity:.5;}
+9% {opacity:.4;}
+10% {opacity:.5;}
+13% {opacity:.4;}
+20% {opacity:.5;}
+25% {opacity:1;}
+}
+
 .title {
+	-webkit-animation: flick 2s infinite;
 	color: Lime;
 	text-align: center;
 	font-size: 900%;
@@ -17,6 +28,8 @@
 	text-align: left;
 	font-size: 300%;
 	margin-top: 75 px;
+	-webkit-animation: flick 2s infinite;
+	font-family: Neon;
 }
 
 .enterUser {
