@@ -4,6 +4,12 @@
 	font-size: 900%;
 	margin-top: 75 px;
 	font-family: Neon;
+	text-shadow:0 0 7px Lime;
+}
+
+#indexBody {
+	width: 100%;
+	background-color: black;
 }
 
 .subtitle {
@@ -13,14 +19,10 @@
 	margin-top: 75 px;
 }
 
-body {
-	background-color: black;
-}
-
 .enterUser {
-	font-family: roboto-mono, monospace;
-	font-weight: 300;
-	font-size: 200%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 165%;
 	text-align: center;
 	color: Gold;
 	margin-top: 12%;
@@ -28,7 +30,7 @@ body {
 
 .userIn {
 	width:30%;
-	font-family: roboto-mono, monospace;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 100%;
 	text-align: center;
@@ -37,29 +39,49 @@ body {
 	margin-right: 35%;
 }
 
-.button {
-	width: 16%;
-	padding: 1%;
-	font-family: roboto-mono, monospace;
-	font-weight: 400;
-	font-size: 150%;
-	text-align: center;
-	color: black;
-	background-color: Turquoise;
-	margin-top: 2%;
-	margin-left: 42%;
-	margin-right: 42%;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 0;
+	border-style: none;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	display: block;
+	width: 50%;
+	font-size: 15px;
+	vertical-align: middle;
+	outline: none !important;
+	margin: auto;
 }
 
-.button:hover {background-color: MediumTurquoise}
+.btn-design1 {
+	background: none;
+	color: #22AFCA !important;
+	transition: all 280ms ease-in-out 0s;
+	letter-spacing: 1px;
+}
 
-.button:active {
-  background-color: MediumTurquoise;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.btn-design1::after, .btn-design1::before {
+ border: 1px solid rgba(255, 255, 255, 0);
+ bottom: 0;
+ content: " ";
+ display: block;
+ margin: 15px auto;
+ position: relative;
+ transition: all 280ms ease-in-out 0s;
+ width: 0;
+ box-shadow: 0px 0px 0px #22AFCA;
+}
+
+.btn-design1:hover {
+	letter-spacing: 4px;
+}
+.btn-design1:hover::after, 
+.btn-design1:hover::before {
+ border: 1px solid #22AFCA;
+ transition: width 350ms ease-in-out 0s;
+ width: 100%;
+ box-shadow: 0 0 19px 1px #0c75d7;
 }
 
 @font-face {
@@ -67,50 +89,6 @@ body {
     font-style: normal;
     font-weight: normal;
     src: local('Neon'), url('Neon.woff') format('woff');
-}
-
-.robotoLightItalic{
-	font-family: roboto-mono, monospace;
-	font-weight: 300;
-	font-style: italic;
-}
-
-.robotoLight{
-	font-family: roboto-mono, monospace;
-	font-weight: 300;
-}
-
-.robotoRegItalic{
-	font-family: roboto-mono, monospace;
-	font-weight: 400;
-	font-style: italic;
-}
-
-.robotoReg{
-	font-family: roboto-mono, monospace;
-	font-weight: 400;
-}
-
-.robotoMedItalic{
-	font-family: roboto-mono, monospace;
-	font-weight: 500;
-	font-style: italic;
-}
-
-.robotoMed{
-	font-family: roboto-mono, monospace;
-	font-weight: 500;
-}
-
-.robotoBoldItalic{
-	font-family: roboto-mono, monospace;
-	font-weight: 700;
-	font-style: italic;
-}
-
-.robotoBight{
-	font-family: roboto-mono, monospace;
-	font-weight: 700;
 }
 
 .header-section {
@@ -144,11 +122,12 @@ body {
 
 }
 
-body {
+#navigationBody {
 	width: 100%;
 	color: #fff;
-	font-family: monospace;
 	margin-left: 10%;
+	font-family: monospace;
+	background-color: black;
   }
   
   .grid {
