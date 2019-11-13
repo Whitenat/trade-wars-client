@@ -127,7 +127,9 @@
 	font-weight: 300;
 	font-size: 200%;
 	text-align: left;
-	color: Gold
+	color: #FFCC00;
+	text-shadow: 0 0 5px; 
+
 }
 
 .center-nav{
@@ -191,7 +193,8 @@
 	font-weight: 300;
 	font-size: 200%;
 	text-align: left;
-	color: Gold;
+	color: #FFCC00;
+	text-shadow: 0 0 5px;
 }
 
   .cargo-title{
@@ -200,4 +203,14 @@
 	font-size: 200%;
 	text-align: left;
 	color: red;
+	text-shadow: 0 0 5px; 
+  }
+
+  .space-wallet{
+	font-family: roboto-mono, monospace;
+	font-weight: 400;
+	font-size: 200%;
+	text-align: left;
+	color: lime;
+	text-shadow: 0 0 5px; 
   }
