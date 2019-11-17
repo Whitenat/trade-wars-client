@@ -1,11 +1,10 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	"net/http"
-	"strconv"
+	// "strconv"
 )
-
 
 //Home handler function which writes a byte slice
 //containing "Welcome to the thunder dome"
@@ -19,7 +18,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Welcome to the thunder dome"))
 }
 
-//Add a showSnippet handler function
+//Add a showNavigation handler function
 func showNavigation(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Display a specific snippet..."))
 }
