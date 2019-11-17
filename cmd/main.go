@@ -8,6 +8,12 @@ import (
 //Home handler function which writes a byte slice
 //containing "Welcome to the thunder dome"
 func home(w http.ResponseWriter, r *http.Request) {
+//Check if URL path matches exactly
+	if r.URL.Path != "/" {
+		http.NotFound(w, r)
+		return
+	}
+
 	w.Write([]byte("Welcome to the thunder dome"))
 }
 
