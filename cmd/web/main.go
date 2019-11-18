@@ -16,7 +16,7 @@ func main() {
 	mux.HandleFunc("/navigation", showNavigation)
 	//mux.HandleFunc("/snippet/create", createSnippet)
 
-	fs := http.FileServer(http.Dir("static"))
+	fs := http.FileServer(http.Dir("./ui/static/"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
 	http.HandleFunc("/", serveTemplate)
