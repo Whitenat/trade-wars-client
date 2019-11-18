@@ -12,8 +12,8 @@ func main() {
 	//then register the home function as the handler for the "/" URL pattern
 	//Finally, register the 2 new handler functions and URL patterns
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", home)
-	mux.HandleFunc("/navigation", showNavigation)
+	// mux.HandleFunc("/", home)
+	// mux.HandleFunc("/navigation", showNavigation)
 	//mux.HandleFunc("/snippet/create", createSnippet)
 
 	fs := http.FileServer(http.Dir("static"))

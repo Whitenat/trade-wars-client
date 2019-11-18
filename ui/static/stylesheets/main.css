@@ -214,3 +214,12 @@
 	color: lime;
 	text-shadow: 0 0 5px; 
   }
+
+  #tradeBody {
+	width: 100%;
+	color: #fff;
+	margin-left: 10%;
+	font-family: monospace;
+	background-color: black;
+  }
+  
