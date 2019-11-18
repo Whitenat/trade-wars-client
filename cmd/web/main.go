@@ -12,17 +12,14 @@ func main() {
 	//then register the home function as the handler for the "/" URL pattern
 	//Finally, register the 2 new handler functions and URL patterns
 	mux := http.NewServeMux()
-	// mux.HandleFunc("/", home)
-	// mux.HandleFunc("/navigation", showNavigation)
+	mux.HandleFunc("/", home)
+	mux.HandleFunc("/navigation", showNavigation)
 	//mux.HandleFunc("/snippet/create", createSnippet)
 
 	fs := http.FileServer(http.Dir("static"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
 	http.HandleFunc("/", serveTemplate)
-
-	log.Println("Listening...")
-	http.ListenAndServe(":3000", nil)
 
 	//Use the http.ListenAndServe() function to start a new web server
 	//We pass in 2 params: the TCP network address to liston on, and the
