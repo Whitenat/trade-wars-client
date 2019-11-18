@@ -8,13 +8,20 @@
 25% {opacity:1;}
 }
 
+@font-face {
+    font-family: 'Neon';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neon'), url('Neon.woff') format('woff');
+}
+
 .title {
 	-webkit-animation: flick 2s infinite;
 	color: Lime;
 	text-align: center;
 	font-size: 900%;
 	margin-top: 75 px;
-	font-family: Neon;
+	font-family: 'Neon', 'Orbitron', sans-serif;
 	text-shadow:0 0 7px Lime;
 }
 
@@ -29,7 +36,7 @@
 	font-size: 300%;
 	margin-top: 75 px;
 	-webkit-animation: flick 2s infinite;
-	font-family: Neon;
+	font-family: 'Neon';
 }
 
 .enterUser {
@@ -97,28 +104,38 @@
  box-shadow: 0 0 19px 1px #0c75d7;
 }
 
-@font-face {
-    font-family: 'Neon';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Neon'), url('Neon.woff') format('woff');
+.btn-design4 {
+	margin: 16px auto;
+	letter-spacing: 2px;
+	padding: 16px;
+	color: #fff !important;
+	border: 0px solid #0c75d7;
+	background: #22AFCA;
+	transition: box-shadow 0.3s ease-in-out;
+	transition: background 0.2s ease;
+}
+.btn-design4:hover {
+	background: none;
+	transition: box-shadow 0.03s ease-in-out;
+	box-shadow: 0 0 12px 0px #0c75d7;
+	border: 1px solid #22AFCA;
 }
 
 .header-section {
 	float: center;
 	width: 100%;
-	height: 15%;
+	height: 100px;
 }
 
 .title-section {
 	float: left;
-	height: 15%;
-	width: 50%
+	height: 100px;
+	width: 50%;
 }
 
 .status-section {
 	float: right;
-	height: 15%;
+	height: 100px;
 	width: 40%
 }
 
@@ -222,4 +239,23 @@
 	font-family: monospace;
 	background-color: black;
   }
+
+  .trade-menu-section{
+	width: 75%;
+	height: 500px;
+  }
   
+  .trade-options-menu{
+	float: left;
+	text-align: left;
+	width:30%;
+	border: 1px solid #3dd3ed;
+  }
+
+  .my-stuff-menu{
+	float: right;
+	text-align: left;
+	width:30%;
+	border: 1px solid #3dd3ed;
+
+  }
