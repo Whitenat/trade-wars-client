@@ -8,8 +8,7 @@ import (
 	// "strconv"
 )
 
-//Home handler function which writes a byte slice
-//containing "Welcome to the thunder dome"
+//Home handler function which serves the home page
 func home(w http.ResponseWriter, r *http.Request) {
 	//Check if URL path matches exactly
 	if r.URL.Path != "/" {
@@ -20,6 +19,19 @@ func home(w http.ResponseWriter, r *http.Request) {
 files := []string{
 	"./ui/html/home.page.tmpl",
 	}
+//If it's a POST request, display callsign
+if r.Method == http.MethodPost {
+
+}
+//If it's a GET request, display "Enter username"
+if r.Method == http.MethodGet {
+
+}
+//Otherwise, throw a 405 error
+if r.Method != http.MethodPost && r.method != http.MethodGet {
+	w.WriteHeader(405)
+	w.Write([]byte("Method Not Allowed"))
+}
 
 // Use the template.ParseFiles() function to read the template file into a
 // template set. If there's an error, we log the detailed error message and use
@@ -42,7 +54,7 @@ files := []string{
     }
 }
 
-//Add a showNavigation handler function
+//Navigation handler function which serves the navigation page
 func showNavigation(w http.ResponseWriter, r *http.Request) {
 //Check if URL path matches exactly
 	if r.URL.Path != "/navigation" {
@@ -75,16 +87,4 @@ files := []string{
     }
 }
 
-// //Add a createSnippet handler function
-// func createSnippet(w http.ResponseWriter, r *http.Request) {
-// //use r.Method to check if request is POST
-// 	if r.Method != http.MethodPost {
-// //If not, send 405 error and let them know what is allowed
-// 	w.Header().Set("Allow", http.MethodPost)
-// 	w.WriteHeader(405)
-// 	w.Write([]byte("Method Not Allowed"))
-// 	return
-// 	}
 
-// 	w.Write([]byte("Create a new snippet..."))
-// }
