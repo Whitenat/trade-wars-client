@@ -19,6 +19,7 @@
 	-webkit-animation: flick 2s infinite;
 	color: Lime;
 	text-align: center;
+	font-weight: 550;
 	font-size: 900%;
 	margin-top: 75 px;
 	font-family: 'Neon', 'Orbitron', sans-serif;
@@ -31,6 +32,8 @@
 	background-image: radial-gradient(rgba(0, 150, 0, 0.35), black 120%);
   	height: 100vh;
   	text-shadow: 0 0 2px #C8C8C8;
+  	transform: skewx(2deg) translatex(3%);
+ 	transform-origin: 50% 50%;
 }
 
 #indexBody::after {
@@ -76,6 +79,7 @@
 	color: dimgrey;
 	margin-left: 35%;
 	margin-right: 35%;
+	margin-top: 10%;
 }
 
 .btn {
