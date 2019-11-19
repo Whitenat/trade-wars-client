@@ -28,7 +28,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 	}
 	//Otherwise, throw a 405 error
-	if r.Method != http.MethodPost && r.method != http.MethodGet {
+	if r.Method != http.MethodPost && r.Method != http.MethodGet {
 		w.WriteHeader(405)
 		w.Write([]byte("Method Not Allowed"))
 	}
@@ -88,7 +88,7 @@ func showNavigation(w http.ResponseWriter, r *http.Request) {
 }
 
 //Navigation handler function which serves the trade page
-func showNavigation(w http.ResponseWriter, r *http.Request) {
+func showTrade(w http.ResponseWriter, r *http.Request) {
 	//Check if URL path matches exactly
 	if r.URL.Path != "/trade" {
 		http.NotFound(w, r)
@@ -96,7 +96,7 @@ func showNavigation(w http.ResponseWriter, r *http.Request) {
 	}
 
 	files := []string{
-		"./ui/html/trade.page.tmpl",
+		"./ui/html/trade.tmpl",
 	}
 
 	// Use the template.ParseFiles() function to read the template file into a
