@@ -37,12 +37,6 @@
 }
 
 #indexBody::after {
-/*content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;*/
   background: repeating-linear-gradient(
     0deg,
     rgba(black, 0.15),
@@ -183,7 +177,22 @@
 	margin-left: 10%;
 	font-family: monospace;
 	background-color: black;
+	background-image: radial-gradient(rgba(0, 150, 0, 0.35), black 120%);
+  	height: 100vh;
+  	text-shadow: 0 0 2px #C8C8C8;
+  	transform: skewx(2deg) translatex(3%);
+ 	transform-origin: 50% 50%;
   }
+
+#navigationBody::after {
+	background: repeating-linear-gradient(
+	0deg,
+	rgba(black, 0.15),
+	rgba(black, 0.15) 1px,
+	transparent 1px,
+	transparent 2px
+	);
+}
   
   .grid {
 	width: 55%;
