@@ -26,12 +26,12 @@ func home(w http.ResponseWriter, r *http.Request) {
 	//If it's a GET request, display "Enter username"
 	if r.Method == http.MethodGet {
 	}
+
 	//Otherwise, throw a 405 error
 	if r.Method != http.MethodPost && r.Method != http.MethodGet {
 		w.WriteHeader(405)
 		w.Write([]byte("Method Not Allowed"))
 	}
-
 
 	// Use the template.ParseFiles() function to read the template file into a
 	// template set. If there's an error, we log the detailed error message and use
