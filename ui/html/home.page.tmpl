@@ -4,15 +4,7 @@
 		<title>Trade Wars Home Page</title>
 		<link rel="stylesheet" type="text/css" href="../static/css/main.css">
 		<link rel="stylesheet" href="https://use.typekit.net/ajk4nke.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script>
-		$(document).ready(function(){
-			submit.onclick = function submitClick() {
-				var username = $("#username").val()
-				window.location.href='/navigation'
-			}
-		});
-		</script>
+
 	</head>
 	<body id = "indexBody">
 		<header>
@@ -23,7 +15,11 @@
 		<main>
 			<p class="enterUser">ENTER USERNAME</p>
 			<input id="username" class="userIn" type="text" name="username">
-		    <button class="btn btn-design1" id="submit">SUBMIT</button>
+		    <button class="btn btn-design1" id="submit" onclick="getName">SUBMIT</button>
 		</main>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../static/js/main.js"></script>
+
 	</body>
 </html>
