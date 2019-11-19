@@ -14,6 +14,8 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", home)
 	mux.HandleFunc("/navigation", showNavigation)
+	mux.HandleFunc("/trade", showTrade)
+	mux.HandleFunc("/chat", showChat)
 	//mux.HandleFunc("/snippet/create", createSnippet)
 
 	fs := http.FileServer(http.Dir("./ui/static/"))
