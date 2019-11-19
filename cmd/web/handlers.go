@@ -28,7 +28,7 @@ if r.Method == http.MethodGet {
 
 }
 //Otherwise, throw a 405 error
-if r.Method != http.MethodPost && r.method != http.MethodGet {
+if r.Method != http.MethodPost && r.Method != http.MethodGet {
 	w.WriteHeader(405)
 	w.Write([]byte("Method Not Allowed"))
 }
