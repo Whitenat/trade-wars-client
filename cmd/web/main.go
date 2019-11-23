@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"path/filepath"
 	"os"
+	"github.com/joho/godotenv"
 )
 
 func main() {
