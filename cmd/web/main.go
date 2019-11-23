@@ -20,6 +20,8 @@ func main() {
 	mux.HandleFunc("/chat", showChat)
 	//mux.HandleFunc("/snippet/create", createSnippet)
 
+	godotenv.Load()
+
 	fs := http.FileServer(http.Dir("./ui/static/"))
 	mux.Handle("/static/", http.StripPrefix("/static", fs))
 
