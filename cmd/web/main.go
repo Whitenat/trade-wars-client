@@ -27,8 +27,9 @@ func main() {
 	//We pass in 2 params: the TCP network address to liston on, and the
 	//servemux we just created. If http.ListenAndServe() returns an error
 	//that any error return by http.ListenAndServe() is always non-nil
-	log.Println("Starting server on :4000")
-	err := http.ListenAndServe(":4000", mux)
+	PORT := os.Getenv("PORT")
+	log.Println("Starting server on")
+	err := http.ListenAndServe(":" + PORT, mux)
 	log.Fatal(err)
 }
 
