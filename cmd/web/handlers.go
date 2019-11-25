@@ -21,11 +21,13 @@ func home(w http.ResponseWriter, r *http.Request) {
 	}
 	//If it's a POST request, parse and hold callsign
 	if r.Method == http.MethodPost {
+	//check for an error in parsing
 		err := r.ParseForm()
 		if err != nil {
 			log.Println(err.Error())
 			http.Error(w, "Internal Server Error", 500)
 		}
+	//hold th user name in a variable
 	callsign := r.Form.Get("userName")
 		
 	//Redirect user to nav page
