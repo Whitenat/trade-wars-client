@@ -27,9 +27,16 @@ func home(w http.ResponseWriter, r *http.Request) {
 			log.Println(err.Error())
 			http.Error(w, "Internal Server Error", 500)
 		}
-	//hold th user name in a variable
+	//hold the user name in a variable
 	callsign := r.Form.Get("userName")
-		
+	//set cookie to hole callsign
+	cookie := http.Cookie{
+		Name: "callsign",
+		Value: callsign,
+		Expires: time.Now().AddDate(0, 0, 1),
+		Path: "/",
+	}
+	http.SetCookie(w, &cookie)	
 	//Redirect user to nav page
 	http.Redirect(w, r, "/navigation", http.StatusSeeOther)
 
@@ -67,6 +74,17 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 //Navigation handler function which serves the navigation page
 func showNavigation(w http.ResponseWriter, r *http.Request) {
+	//get info from cookie
+	var cookie, err = r.Cookie("callsign")
+	if err != nil {
+		log.Println(err.Error())
+		http.Error(w, "Internal Server Error: Couldn't get callsign", 500)
+		return
+	}
+	callsign := cookie.Value
+	log.Println(callsign)
+	w.Write([]byte(callsign))
+
 	//Check if URL path matches exactly
 	if r.URL.Path != "/navigation" {
 		http.NotFound(w, r)
