@@ -19,13 +19,22 @@ func home(w http.ResponseWriter, r *http.Request) {
 	files := []string{
 		"./ui/html/home.page.tmpl",
 	}
-	//If it's a POST request, display callsign
+	//If it's a POST request, parse and hold callsign
 	if r.Method == http.MethodPost {
+		err := r.ParseForm()
+		if err != nil {
+			log.Println(err.Error())
+			http.Error(w, "Internal Server Error", 500)
+		}
+	callsign := r.Form.Get("userName")
+		
+	//Redirect user to nav page
+	http.Redirect(w, r, "/navigation", http.StatusSeeOther)
 
 	}
-	//If it's a GET request, display "Enter username"
-	if r.Method == http.MethodGet {
-	}
+	// //If it's a GET request, display "Enter username"
+	// if r.Method == http.MethodGet {
+	// }
 
 	//Otherwise, throw a 405 error
 	if r.Method != http.MethodPost && r.Method != http.MethodGet {
