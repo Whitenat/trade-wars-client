@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"time"
 	// "strconv"
 )
 
@@ -21,24 +22,24 @@ func home(w http.ResponseWriter, r *http.Request) {
 	}
 	//If it's a POST request, parse and hold callsign
 	if r.Method == http.MethodPost {
-	//check for an error in parsing
+		//check for an error in parsing
 		err := r.ParseForm()
 		if err != nil {
 			log.Println(err.Error())
 			http.Error(w, "Internal Server Error", 500)
 		}
-	//hold the user name in a variable
-	callsign := r.Form.Get("userName")
-	//set cookie to hole callsign
-	cookie := http.Cookie{
-		Name: "callsign",
-		Value: callsign,
-		Expires: time.Now().AddDate(0, 0, 1),
-		Path: "/",
-	}
-	http.SetCookie(w, &cookie)	
-	//Redirect user to nav page
-	http.Redirect(w, r, "/navigation", http.StatusSeeOther)
+		//hold the user name in a variable
+		callsign := r.Form.Get("userName")
+		//set cookie to hole callsign
+		cookie := http.Cookie{
+			Name:    "callsign",
+			Value:   callsign,
+			Expires: time.Now().AddDate(0, 0, 1),
+			Path:    "/",
+		}
+		http.SetCookie(w, &cookie)
+		//Redirect user to nav page
+		http.Redirect(w, r, "/navigation", http.StatusSeeOther)
 
 	}
 	// //If it's a GET request, display "Enter username"
