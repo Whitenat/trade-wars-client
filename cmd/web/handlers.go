@@ -84,7 +84,7 @@ func showNavigation(w http.ResponseWriter, r *http.Request) {
 	}
 	callsign := cookie.Value
 	log.Println(callsign)
-	w.Write([]byte(callsign))
+	// w.Write([]byte(callsign))
 
 	//Check if URL path matches exactly
 	if r.URL.Path != "/navigation" {
@@ -110,7 +110,7 @@ func showNavigation(w http.ResponseWriter, r *http.Request) {
 	// We then use the Execute() method on the template set to write the template
 	// content as the response body. The last parameter to Execute() represents any
 	// dynamic data that we want to pass in, which for now we'll leave as nil.
-	err = ts.Execute(w, nil)
+	err = ts.Execute(w, callsign)
 	if err != nil {
 		log.Println(err.Error())
 		http.Error(w, "Internal Server Error", 500)
