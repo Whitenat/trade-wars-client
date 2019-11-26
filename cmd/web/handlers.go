@@ -110,7 +110,7 @@ func showNavigation(w http.ResponseWriter, r *http.Request) {
 	// We then use the Execute() method on the template set to write the template
 	// content as the response body. The last parameter to Execute() represents any
 	// dynamic data that we want to pass in, which for now we'll leave as nil.
-	err = ts.Execute(w, callsign)
+	err = ts.ExecuteTemplate(w, "navigation", callsign)
 	if err != nil {
 		log.Println(err.Error())
 		http.Error(w, "Internal Server Error", 500)

@@ -1,3 +1,4 @@
+{{define "navigation"}}
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,13 +11,10 @@
 <body id = "navigationBody">
         <div class = "header-section">
                 <div class="status-section">
-                       
-                       
-                        You are {{.callsign}}
-                        <h1 id = "status" class = "status">STATUS MESSAGE</h1>
+                
+                        <h1 id = "status" class = "status">{{.}}</h1>
                         <p style="color:lime;" id="showUser"></p>
                         
-                
                 </div>
             <div class = "title-section">
                     <h1 class="subtitle">TRADE WARS</h1>
@@ -158,3 +156,4 @@
         
 </body>
 </html>
+{{end}}
