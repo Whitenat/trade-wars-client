@@ -24,15 +24,20 @@ function getKeyAndMove(e){
 	}
 }
 function moveLeft(){
-	ship.style.left=parseInt(ship.style.left)-15 +'px';
+	if(ship.style.left > '0 em') {
+		ship.style.left=parseInt(ship.style.left)-7 +'em';
+	}	
 }
+// function moveLeft(){
+// 	ship.style.left=parseInt(ship.style.left)-7 +'em';	
+// }
 function moveUp(){
-	ship.style.top=parseInt(ship.style.top)-15 +'px';
+	ship.style.top=parseInt(ship.style.top)-7 +'em';
 }
 function moveRight(){
-	ship.style.left=parseInt(ship.style.left)+15 +'px';
+	ship.style.left=parseInt(ship.style.left)+7 +'em';
 }
 function moveDown(){
-	ship.style.top=parseInt(ship.style.top)+15 +'px';
+	ship.style.top=parseInt(ship.style.top)+7 +'em';
 }
 window.onload=init;
