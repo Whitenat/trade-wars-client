@@ -1,4 +1,3 @@
-
 //init object globally
 var ship= null;
 function init(){
