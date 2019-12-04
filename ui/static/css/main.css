@@ -172,13 +172,13 @@
 }
 
 #navigationBody {
-	width: 100%;
+	width: 80%;
 	color: #fff;
 	margin-left: 10%;
 	font-family: monospace;
 	background-color: black;
 	background-image: radial-gradient(rgba(0, 150, 0, 0.35), black 120%);
-  	height: 100vh;
+  	height: 40vh;
   	text-shadow: 0 0 2px #C8C8C8;
   }
 
@@ -193,31 +193,31 @@
 }
   
   .grid {
-	width: 55%;
+	width: 50%;
 	background: #3dd3ed;
 	display: grid;
-	grid-auto-rows: 20vw;
-	grid-gap: .25rem;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 3vw;
+	grid-gap: .15rem;
+	grid-template-columns: .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
 	
   }
   
-  @media (min-width: 30rem) {
+  @media (min-width: 10rem) {
 	.grid {
-	grid-auto-rows: 5vw;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+	grid-auto-rows: 3.8vw;
+	grid-template-columns: .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr; 
 	}
   }
   
   .grid__item {
 	animation: 1s linear 0s alternate infinite flicker;
 	background: black;
-	box-shadow: inset 0 0 2rem #3dd3ed;
-	padding: 2rem;
+	box-shadow: inset 0 0 1rem #3dd3ed;
+	padding: 1rem;
   }
   
   
-  @media (min-width: 60rem) {
+  @media (min-width: 10rem) {
   
   @keyframes flicker { from { 
 	box-shadow: inset 0 0 1.5rem #3dd3ed; } to { 
