@@ -407,3 +407,11 @@
   .msger-input {
 	flex: 1;
   }
+
+  .ship {
+	height: 25px;
+	width: 25px;
+	background-color: #3dd3ed;
+	border-radius: 50%;
+	display: inline-block;
+  }
