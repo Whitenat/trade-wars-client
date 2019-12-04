@@ -25,19 +25,19 @@ function getKeyAndMove(e){
 }
 function moveLeft(){
 	if(ship.style.left > '0 em') {
-		ship.style.left=parseInt(ship.style.left)-7 +'em';
+		ship.style.left=parseInt(ship.style.left)-4 +'vw';
 	}	
 }
 // function moveLeft(){
 // 	ship.style.left=parseInt(ship.style.left)-7 +'em';	
 // }
 function moveUp(){
-	ship.style.top=parseInt(ship.style.top)-7 +'em';
+	ship.style.top=parseInt(ship.style.top)-4 +'vw';
 }
 function moveRight(){
-	ship.style.left=parseInt(ship.style.left)+7 +'em';
+	ship.style.left=parseInt(ship.style.left)+4 +'vw';
 }
 function moveDown(){
-	ship.style.top=parseInt(ship.style.top)+7 +'em';
+	ship.style.top=parseInt(ship.style.top)+4 +'vw';
 }
 window.onload=init;
