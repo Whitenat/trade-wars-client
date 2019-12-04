@@ -24,15 +24,15 @@ function getKeyAndMove(e){
 	}
 }
 function moveLeft(){
-	ship.style.left=parseInt(ship.style.left)-5 +'%';
+	ship.style.left=parseInt(ship.style.left)-15 +'px';
 }
 function moveUp(){
-	ship.style.top=parseInt(ship.style.top)-5 +'%';
+	ship.style.top=parseInt(ship.style.top)-15 +'px';
 }
 function moveRight(){
-	ship.style.left=parseInt(ship.style.left)+5 +'%';
+	ship.style.left=parseInt(ship.style.left)+15 +'px';
 }
 function moveDown(){
-	ship.style.top=parseInt(ship.style.top)+5 +'%';
+	ship.style.top=parseInt(ship.style.top)+15 +'px';
 }
 window.onload=init;
