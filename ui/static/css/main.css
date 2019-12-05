@@ -407,9 +407,38 @@
   }
 
   .ship {
-	height: 25px;
-	width: 25px;
+	height: 20px;
+	width: 20px;
 	background-color: #3dd3ed;
 	border-radius: 50%;
 	display: inline-block;
+	border-radius: 50%;
+  	animation: 2s ease infinite pulse;
+  	box-shadow: 0 0 0 #3dd2edad;
+  }
+
+  @-webkit-keyframes pulse {
+	0% {
+	  -webkit-box-shadow: 0 0 0 0 #3dd2edad;
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 10px #3dd3ed;
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 #3dd3ed;
+	}
+  }
+  @keyframes pulse {
+	0% {
+	  -moz-box-shadow: 0 0 0 0 #3dd2edad;
+	  box-shadow: 0 0 0 0 #3dd2edad;
+	}
+	70% {
+		-moz-box-shadow: 0 0 0 10px #3dd3ed;
+		box-shadow: 0 0 0 10px #3dd3ed;
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 #3dd3ed;
+		box-shadow: 0 0 0 0 #3dd3ed;
+	}
   }
