@@ -1,5 +1,7 @@
 //init object globally
 var ship= null;
+var vertCount = 0;
+var horizCount = 0;
 function init(){
 	ship=document.getElementById("ship");				
 	ship.style.position='relative';
@@ -24,20 +26,31 @@ function getKeyAndMove(e){
 	}
 }
 function moveLeft(){
-	if(ship.style.left > '0 em') {
-		ship.style.left=parseInt(ship.style.left)-4 +'em';
+
+	if(horizCount > 0) {
+		ship.style.left=parseInt(ship.style.left)-4 +'vw';
+		horizCount -= 1;
 	}	
 }
-// function moveLeft(){
-// 	ship.style.left=parseInt(ship.style.left)-7 +'em';	
-// }
 function moveUp(){
-	ship.style.top=parseInt(ship.style.top)-4 +'em';
+
+	if(vertCount > 0) {
+		ship.style.top=parseInt(ship.style.top)-4 +'vw';
+		vertCount -= 1;
+	}	
 }
+	
 function moveRight(){
-	ship.style.left=parseInt(ship.style.left)+4 +'em';
+
+	if(horizCount < 9) {
+		ship.style.left=parseInt(ship.style.left)+4 +'vw';
+		horizCount += 1;
+	}
 }
 function moveDown(){
-	ship.style.top=parseInt(ship.style.top)+4 +'em';
+	if(vertCount < 9) {
+		ship.style.top=parseInt(ship.style.top)+4 +'vw';
+		vertCount += 1;
+	}
 }
 window.onload=init;
